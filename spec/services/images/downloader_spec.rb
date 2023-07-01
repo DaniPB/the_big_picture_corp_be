@@ -39,11 +39,11 @@ RSpec.describe Images::Downloader do
           images_downloaded: 1,
           errors: [
             {
-              error: "Error: Url https://flxt.tmsimg.com/asts/p183931_b_v8_ac.jpg, 404 Not Found",
+              error: "Error: 404 Not Found",
               url: "https://flxt.tmsimg.com/asts/p183931_b_v8_ac.jpg"
             },
             {
-              error: "Error: Url https://img.welt.de/img/kultur/mobi378737/8862501407-ci102l-w1024/TV-Serie-Friends.jpg, 404 Not Found",
+              error: "Error: 404 Not Found",
               url: "https://img.welt.de/img/kultur/mobi378737/8862501407-ci102l-w1024/TV-Serie-Friends.jpg"
             }
           ]

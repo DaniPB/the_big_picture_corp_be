@@ -7,7 +7,7 @@ RSpec.shared_examples 'Images::Validator' do
     context 'when input file does not exist' do
       let(:file_path) { Rails.root.join('spec', 'fixtures', 'files', 'invalid.txt') }
       let(:expected_response) do
-        { error: "Error: File #{file_path}, not found" }
+        { error: "Error: File not found, File: #{file_path}" }
       end
 
       it 'returns an error' do
@@ -18,7 +18,7 @@ RSpec.shared_examples 'Images::Validator' do
     context 'when the input file is empty' do
       let(:file_path) { Rails.root.join('spec', 'fixtures', 'files', 'empty.txt') }
       let(:expected_response) do
-        { error: "Error: File #{file_path}, is empty" }
+        { error: "Error: File is empty, File: #{file_path}" }
       end
 
       it 'returns an error' do
@@ -45,7 +45,7 @@ RSpec.shared_examples 'Images::Validator' do
       let(:url) { 'thisiswrong' }
       let(:expected_response) do
         {
-          error: "Error: Url #{url}, URL scheme needs to be http or https: #{url}"
+          error: "Error: URL scheme needs to be http or https: #{url}"
         }
       end
 
@@ -58,7 +58,7 @@ RSpec.shared_examples 'Images::Validator' do
       let(:url) { 'https://flxt.tmsimg.com/aoooosets/p183931_b_v8_ac.jpg' }
       let(:expected_response) do
         {
-          error: "Error: Url #{url}, 404 Not Found"
+          error: "Error: 404 Not Found"
         }
       end
 
@@ -72,7 +72,7 @@ RSpec.shared_examples 'Images::Validator' do
 
       let(:expected_response) do
         {
-          error: "Error: Url #{url}, is not an image"
+          error: "Error: Url content is not an image"
         }
       end
 
