@@ -48,9 +48,9 @@ By following this implementation approach, the code provides a structured, maint
 
 ### Instructions
 
-1. `git clone command here`
+1. Clone repo
 2. Fill out the .env file based on the .env.sample provided
-3. `sudo docker compose build`
+3. Run `sudo docker compose build`
  
 
 🖱️Usage
