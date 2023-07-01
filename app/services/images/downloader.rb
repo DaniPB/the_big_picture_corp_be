@@ -39,7 +39,10 @@ module Images
     end
 
     def save_in_hard_drive(tempfile)
-      FileUtils.mv(tempfile.path, "./#{tempfile.original_filename}")
+      FileUtils.mv(
+        tempfile.path,
+        "#{ENV['DOWNLOADS_PATH']}/#{tempfile.original_filename}"
+      )
     end
 
     def extract_urls_from_file
