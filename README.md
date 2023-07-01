@@ -9,6 +9,7 @@ Image Downloader is a command-line tool that allows you to download a list of im
 * [Implementation Details](#implementation-details)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Tests Suite](#tests-suite)
 * [Contributing](#contributing)
 * [Authors](#authors)
 
