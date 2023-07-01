@@ -58,6 +58,9 @@ By following this implementation approach, the code provides a structured, maint
 
 `docker compose run web rake images:download_batch\["file/path"\]`
 
+✅ Tests Suite
+------------
+`sudo docker compose run web rspec spec`
 
 🙌 Contributing
 ------------
