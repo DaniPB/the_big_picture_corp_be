@@ -49,7 +49,7 @@ RSpec.shared_examples 'Images::Validator' do
         }
       end
 
-      it 'returns an error' do
+      it 'returns an error', :vcr do
         expect(response).to eq(expected_response)
       end
     end
@@ -62,7 +62,7 @@ RSpec.shared_examples 'Images::Validator' do
         }
       end
 
-      it 'returns an error' do
+      it 'returns an error', :vcr do
         expect(response).to eq(expected_response)
       end
     end
@@ -76,7 +76,7 @@ RSpec.shared_examples 'Images::Validator' do
         }
       end
 
-      it 'returns an error' do
+      it 'returns an error', :vcr do
         expect(response).to eq(expected_response)
       end
     end
@@ -91,7 +91,7 @@ RSpec.shared_examples 'Images::Validator' do
         }
       end
 
-      it 'returns success result' do
+      it 'returns success result', :vcr do
         expect(response).to include(expected_response)
       end
     end

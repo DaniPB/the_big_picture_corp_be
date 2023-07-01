@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://flxt.tmsimg.com/aoooosets/p183931_b_v8_ac.jpg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Down/5.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - image/png
+      Content-Length:
+      - '187'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 01 Jul 2023 14:56:27 GMT
+      Status:
+      - 404 Not Found
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Cascade:
+      - pass
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.17
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.17
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 bc8243121fd94c5b2714caac07caccde.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MUC50-P3
+      X-Amz-Cf-Id:
+      - BNrruUAJ8YT_iHS3_WecT2GZA54x9HmPYpm5vYsaHc3gWF_PygTr4w==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wFEBMRBpULNRcAAAAidEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVAgb24gYSBNYWOHqHdDAAAADUlEQVQI12NgYGBgAAAABQABXvMqOgAAAABJRU5ErkJggg==
+  recorded_at: Sat, 01 Jul 2023 14:56:27 GMT
+recorded_with: VCR 6.2.0

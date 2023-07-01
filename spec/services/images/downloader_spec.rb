@@ -17,6 +17,10 @@ RSpec.describe Images::Downloader do
       { success: 'Valid File' }
     end
 
+    before do
+      allow(FileUtils).to receive(:mv).and_return(true)
+    end
+
     context 'when validator response has an error' do
       let(:file_path) { '/file/path.txt' }
 
@@ -56,12 +60,12 @@ RSpec.describe Images::Downloader do
           .and_return(success_file_response)
       end
 
-      it 'returns errors for the images that were not downloaded' do
+      it 'returns errors for the images that were not downloaded', :vcr do
         expect(response).to eq(expected_response)
       end
 
-      it 'saves the valid images in the hard drive' do
-        expect(subject).to receive(:save_in_hard_drive).once
+      it 'saves the valid images in the hard drive', :vcr do
+        expect(subject).to receive(:save_in_hard_drive).once.and_return(true)
 
         response
       end
@@ -83,12 +87,12 @@ RSpec.describe Images::Downloader do
           .and_return(success_file_response)
       end
 
-      it 'downloads the images' do
+      it 'downloads the images', :vcr do
         expect(response).to eq(expected_response)
       end
 
-      it 'saves the images in the hard drive' do
-        expect(subject).to receive(:save_in_hard_drive).exactly(3).times
+      it 'saves the images in the hard drive', :vcr do
+        expect(subject).to receive(:save_in_hard_drive).exactly(3).times.and_return(true)
 
         response
       end
