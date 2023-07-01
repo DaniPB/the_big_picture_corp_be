@@ -9,7 +9,7 @@ module Images
     end
 
     def call
-      file_validation = check_file(file_path)
+      file_validation = check_file
 
       if file_validation[:success].present?
         urls = extract_urls_from_file
