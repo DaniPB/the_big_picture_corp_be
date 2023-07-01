@@ -34,3 +34,4 @@
 
 # Ignore bybug history
 .byebug_history
+.env

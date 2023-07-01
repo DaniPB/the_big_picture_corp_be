@@ -79,6 +79,10 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     down (5.4.1)
       addressable (~> 2.8)
     erubi (1.12.0)
@@ -188,6 +192,7 @@ DEPENDENCIES
   bootsnap
   byebug
   debug
+  dotenv-rails
   down (~> 5.0)
   mime-types (~> 3.1)
   puma (~> 5.0)

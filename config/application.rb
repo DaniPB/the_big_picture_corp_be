@@ -37,3 +37,8 @@ module TheBigPictureCorpBe
     config.api_only = true
   end
 end
+
+# Load dotenv only in development or test environment
+if ['development', 'test'].include? ENV['RAILS_ENV']
+  Dotenv::Railtie.load
+end
