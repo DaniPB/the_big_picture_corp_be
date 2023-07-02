@@ -6,12 +6,12 @@ Image Downloader is a command-line tool that allows you to download a list of im
 📋 Table of contents
 -----------------
 
-* [Implementation Details](#implementation-details)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Tests Suite](#tests-suite)
-* [Contributing](#contributing)
-* [Authors](#authors)
+* [Implementation Details](#-implementation-details)
+* [Installation](#-installation)
+* [Usage](#-usage)
+* [Tests Suite](#-tests-suite)
+* [Contributing](#-contributing)
+* [Authors](#-authors)
 
 🤓 Implementation Details
 ---------------
@@ -54,7 +54,7 @@ By following this implementation approach, the code provides a structured, maint
 3. Run `sudo docker compose build`
  
 
-🖱️Usage
+🖱 Usage
 -----
 
 `docker compose run web rake images:download_batch\["file/path"\]`
@@ -66,11 +66,11 @@ By following this implementation approach, the code provides a structured, maint
 🙌 Contributing
 ------------
 
-1. Follow the steps in [Installation](#installation)
+1. Follow the steps in [Installation](#-installation)
 2. Create a new branch
 2. Create a new PR
 
-Authors
+👩‍💻 Authors
 ---------------------------
 
 [Daniela Patiño](https://about.me/dani.pb)
